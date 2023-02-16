@@ -6,7 +6,7 @@ if($_REQUEST['webserver']=="Update Files") {
     shell_exec('/autorun.sh');
 }
 if($_REQUEST['webserver']=="Restart Host") {
-    shell_exec('reboot');
+    shell_exec('sudo reboot');
 }
 
 
