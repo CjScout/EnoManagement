@@ -1,8 +1,11 @@
 <?php
-if($_REQUEST['derry']=="Restart NGINX") {
+if($_REQUEST['webserver']=="Restart NGINX") {
     shell_exec('systemctl restart nginx');
 }
-if($_REQUEST['derry']=="Restart Host") {
+if($_REQUEST['webserver']=="Update Files") {
+    shell_exec('/autorun.sh');
+}
+if($_REQUEST['webserver']=="Restart Host") {
     shell_exec('reboot');
 }
 
